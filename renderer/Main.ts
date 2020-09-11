@@ -40,12 +40,12 @@ export default class extends RenderBase
         config1.textColor = props.get("text-color");
         config1.waveTextColor = props.get("wave-text-color");
         config1.waveColor = props.get("wave-color");
-        config1.circleThickness = 0.2;
+        config1.circleThickness = props.get("thickness");
         config1.textVertPosition = props.get("textPosition");;
         config1.waveAnimateTime = props.get("waveAnimationTime");
-        config1.circleFillGap = 0.05;
+        config1.circleFillGap =  props.get("fillGap");
         config1.waveHeight = 0.05; 
-        config1.waveCount = 2; 
+        config1.waveCount = props.get("waveCount");
         config1.waveRiseTime = 1000; 
         config1.waveRise = true;
         config1.waveHeightScaling = true;
