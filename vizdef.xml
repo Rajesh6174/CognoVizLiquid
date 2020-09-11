@@ -11,20 +11,27 @@
     </dataSets>
 
     <properties>
-        <group name="General">
-            <color name="circle-color" caption="Circle color" defaultValue="#00588B" />
-            <color name="text-color" caption="Text color" defaultValue="#FF4444" />
-            <color name="wave-text-color" caption="Wave Text color" defaultValue="#FFFFFF" />
-            <color name="wave-color" caption="Wave color" defaultValue="#6CCAE0" />
-            <number name="fillOpacity" caption="Fill opacity" defaultValue="0.75" minValue="0" maxValue="1" />
-            <number name="textPosition" caption="Text Position (0-Bottom, 1-Top)" defaultValue="0.5" minValue="0" maxValue="1" />
+         <group name="text" caption="Text">
+            <color name="text-color" caption="Text Color" defaultValue="#FF4444" />
+            <color name="wave-text-color" caption="Wave Text Color" defaultValue="#FFFFFF" />
             <number name="min" caption="Minimum value" defaultValue="0" />
             <number name="max" caption="Maximum value" defaultValue="100" />
+            <font name="labelFont" defaultValue="bold 14pt arial" caption="Text font" />
+            <number name="textPosition" caption="Text Position (0-Bottom, 1-Top)" defaultValue="0.5" minValue="0" maxValue="1" />
             <boolean name="percentage" caption="Show Percentage Sign" defaultValue="true" />
             <boolean name="calcPer" caption="Calculate Percentage" defaultValue="false" />
-            <boolean name="waveAnimation" caption="Wave Animation" defaultValue="true" />
-            <number name="waveAnimationTime" caption="Wave Animation Time(milliseconds)" defaultValue="1000" />
-            <font name="labelFont" defaultValue="bold 14pt arial" caption="Text font" />
+         </group>
+         <group name="circle" caption="Circle">
+            <color name="circle-color" caption="Circle Color" defaultValue="#00588B" />
+            <number name="thickness" caption="Thickness" defaultValue="0.05" minValue="0.00" maxValue="1.00" />
+            <number name="fillGap" caption="Fill Gap" defaultValue="0.05" minValue="0.00" maxValue="1.00" />
+        </group>
+        <group name="wave" caption="Wave">
+            <color name="wave-color" caption="Wave color" defaultValue="#6CCAE0" />
+            <number name="fillOpacity" caption="Fill Opacity" defaultValue="0.75" minValue="0" maxValue="1" />
+            <number name="waveCount" caption="Wave Count" defaultValue="2" />
+            <boolean name="waveAnimation" caption="Animate" defaultValue="true" />
+            <number name="waveAnimationTime" caption="Animate Time (ms)" defaultValue="1000" />  
         </group>
     </properties>
 
