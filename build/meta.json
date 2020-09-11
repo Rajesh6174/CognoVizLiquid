@@ -1,0 +1,11 @@
+{
+    "name": "Liquid Fill",
+    "id": "com.ibm.vis.custom.liquidfill",
+    "type": "renderer",
+    "version": "1.0",
+    "description": "Liquid Fill chart created using D3",
+    "icon": "icon.svg",
+    "cliVersion": "1.1.118",
+    "apiVersion": "1.0",
+    "libVersion": "1.0.112"
+}

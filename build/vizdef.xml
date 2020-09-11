@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualizationDefinition version="3.1" xmlns="http://www.ibm.com/xmlns/prod/ba/vipr/vizBundle/vizdef.3">
+    <slots>
+        <slot name="value" caption="Value" type="cont" optional="false" />
+    </slots>
+
+    <dataSets>
+        <dataSet>
+            <ref slot="value" />
+        </dataSet>
+    </dataSets>
+
+    <properties>
+        <group name="General">
+            <color name="circle-color" caption="Circle color" defaultValue="#00588B" />
+            <color name="text-color" caption="Text color" defaultValue="#FF4444" />
+            <color name="wave-text-color" caption="Wave Text color" defaultValue="#FFFFFF" />
+            <color name="wave-color" caption="Wave color" defaultValue="#6CCAE0" />
+            <number name="fillOpacity" caption="Fill opacity" defaultValue="0.75" minValue="0" maxValue="1" />
+            <number name="textPosition" caption="Text Position (0-Bottom, 1-Top)" defaultValue="0.5" minValue="0" maxValue="1" />
+            <number name="min" caption="Minimum value" defaultValue="0" />
+            <number name="max" caption="Maximum value" defaultValue="100" />
+            <boolean name="percentage" caption="Show Percentage Sign" defaultValue="true" />
+            <boolean name="calcPer" caption="Calculate Percentage" defaultValue="false" />
+            <boolean name="waveAnimation" caption="Wave Animation" defaultValue="true" />
+            <number name="waveAnimationTime" caption="Wave Animation Time(milliseconds)" defaultValue="1000" />
+            <font name="labelFont" defaultValue="bold 14pt arial" caption="Text font" />
+        </group>
+    </properties>
+
+         <!-- Visualization Capabilities  -->
+     <capabilities>
+        <decorations>
+            <!-- Support selection capability-->
+            <decoration name="selected" type="boolean" target="datapoint" />
+            <decoration name="hasSelection" type="boolean" target="dataset" />
+            <!-- Support highlighting capability-->
+            <decoration name="highlighted" type="boolean" target="datapoint" />
+        </decorations>
+    </capabilities>
+</visualizationDefinition>

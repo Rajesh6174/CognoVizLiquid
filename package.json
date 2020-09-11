@@ -1,0 +1,20 @@
+{
+    "name": "custom-visualization",
+    "version": "0.0.1",
+    "description": "Custom Visualization",
+    "repository": {},
+    "devDependencies": {
+        "@types/d3": "^5.7.0"
+    },
+    "dependencies": {
+        "@businessanalytics/customvis-lib": "file:customvis-lib.tgz"
+    },
+    "meta": {
+        "name": "Liquid Fill",
+        "id": "com.ibm.vis.custom.liquidfill",
+        "type": "renderer",
+        "version": "1.0",
+        "description": "Liquid Fill chart created using D3",
+        "icon": "icon.svg"
+    }
+}
